@@ -1,5 +1,5 @@
-const head = function(array) {
-  return (array[0]);
+const tail = function(array) {
+  return (array.slice(1));
 };
 
 const assertEqual = function(actual, expected) {
@@ -11,5 +11,5 @@ const assertEqual = function(actual, expected) {
 };
 
 // TEST CODE
-assertEqual(head([5,6,7]), 5);
-assertEqual(head(["Hello", "Lighthouse", "Labs"]), "Hello");
+assertEqual(JSON.stringify(tail([5,6,7])), JSON.stringify([6,7]));
+assertEqual(JSON.stringify(tail(["Hello", "Lighthouse", "Labs"])), JSON.stringify(["Lighthouse", "Labs"]));
