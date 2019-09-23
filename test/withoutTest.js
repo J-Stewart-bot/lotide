@@ -8,7 +8,7 @@ describe("#without", () => {
   it("returns [1, 2] for [1, 2, 3] without [4, 3]", () => {
     assert.deepEqual(without([1, 2, 3], [4, 3]), [1, 2]); 
   });
-  it("returns \"Hello\" for [\"Hello\", \"Lighthouse\", \"Labs\"]", () => {
+  it("returns [1, 2, 3] for [1, 2, 3] without []", () => {
     assert.deepEqual(without([1, 2, 3], []), [1, 2, 3]);
   });
 });
