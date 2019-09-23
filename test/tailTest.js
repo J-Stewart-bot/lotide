@@ -1,6 +1,14 @@
-const assertEqual = require('../assertEqual');
-const tail = require('../tail');
+const assert = require('chai').assert;
+const head   = require('../tail');
 
-// TEST CODE
-assertEqual(JSON.stringify(tail([5,6,7])), JSON.stringify([6,7]));
-assertEqual(JSON.stringify(tail(["Hello", "Lighthouse", "Labs"])), JSON.stringify(["Lighthouse", "Labs"]));
+describe("#tail", () => {
+  it("returns [2, 3] for [1, 2, 3]", () => {
+    assert.deepEqual(head([1, 2, 3]), [2, 3]);
+  });
+  it("returns [] for ['5']", () => {
+    assert.deepEqual(head(['5']), []); 
+  });
+  it("returns \"Hello\" for [\"Hello\", \"Lighthouse\", \"Labs\"]", () => {
+    assert.deepEqual(head(["Hello", "Lighthouse", "Labs"]), ["Lighthouse", "Labs"]);
+  });
+});
