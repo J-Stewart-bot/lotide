@@ -9,9 +9,9 @@ const eqObjects = require('./eqObjects');
 const eqArrays = require('./eqArrays');
 
 module.exports = {
-  head:   head,
-  tail:   tail,
-  middle: middle,
+  head,
+  tail,
+  middle,
   flatten,
   countOnly,
   letterPosition,
