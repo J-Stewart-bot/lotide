@@ -1,12 +1,12 @@
 {
   "name": "justin_stewart",
   "version": "1.0.0",
-  "description": "",
+  "description": "A small clone of lodash for educational purposes",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
-  "author": "",
+  "author": "Justin Stewart",
   "license": "ISC",
   "devDependencies": {
     "chai": "^4.2.0",
