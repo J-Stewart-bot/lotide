@@ -8,7 +8,7 @@ describe("#flatten", () => {
   it("returns [1, 2, 3, 4] for [1, 2, 3, 4]", () => {
     assert.deepEqual(flatten([1, 2, 3, 4]), [1, 2, 3, 4]); 
   });
-  it("returns \"Hello\" for [\"Hello\", \"Lighthouse\", \"Labs\"]", () => {
+  it('returns ["Hello", "Lighthouse", "Labs"] for [["Hello"], ["Lighthouse", "Labs"]', () => {
     assert.deepEqual(flatten([["Hello"], ["Lighthouse", "Labs"]]), ["Hello", "Lighthouse", "Labs"]);
   });
 });

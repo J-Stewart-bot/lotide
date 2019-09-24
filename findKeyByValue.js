@@ -4,6 +4,6 @@ const findKeyByValue = function(list, theValue) {
       return index;
     }
   }
-}
+};
 
 module.exports = findKeyByValue;
